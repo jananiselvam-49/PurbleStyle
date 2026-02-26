@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="PurpleStyle – Women & Girls Fashion Online Store. Shop Sarees, Chudi, Cosmetics & Baby Girl Dresses." />
+  <title>PurpleStyle – Women &amp; Girls Fashion</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+
+      <!-- Logo -->
+      <div class="nav-logo">
+        <a href="#" id="logo-link">
+          <i class="fa-solid fa-wand-sparkles logo-icon"></i>
+          <span class="logo-text">Purple<span class="logo-accent">Style</span></span>
+        </a>
+      </div>
+
+      <!-- Search Bar -->
+      <div class="nav-search">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Search for sarees, cosmetics, dresses…"
+          autocomplete="off"
+        />
+        <button class="search-btn" id="search-btn" aria-label="Search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <!-- Category Dropdown -->
+        <div class="dropdown" id="category-dropdown">
+          <button class="dropdown-toggle" id="dropdown-btn" aria-haspopup="true" aria-expanded="false">
+            <i class="fa-solid fa-bars-staggered"></i>
+            <span>Categories</span>
+            <i class="fa-solid fa-chevron-down chevron-icon"></i>
+          </button>
+          <ul class="dropdown-menu" id="dropdown-menu" role="menu">
+            <li role="menuitem"><a href="#" data-cat="all"><i class="fa-solid fa-grid-2"></i> All Products</a></li>
+            <li role="menuitem"><a href="#" data-cat="saree"><i class="fa-solid fa-shirt"></i> Saree</a></li>
+            <li role="menuitem"><a href="#" data-cat="chudi"><i class="fa-solid fa-vest"></i> Chudi / Salwar</a></li>
+            <li role="menuitem"><a href="#" data-cat="cosmetics"><i class="fa-solid fa-pump-soap"></i> Cosmetics</a></li>
+            <li role="menuitem"><a href="#" data-cat="baby"><i class="fa-solid fa-baby"></i> Baby Girl Dresses</a></li>
+          </ul>
+        </div>
+
+        <!-- Cart Icon -->
+        <button class="cart-btn" id="cart-btn" aria-label="Open Cart">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="cart-count" id="cart-count">0</span>
+        </button>
+
+        <!-- Login Button -->
+        <button class="login-btn" id="login-btn" aria-label="Login">
+          <i class="fa-solid fa-user"></i>
+          <span id="login-label">Login</span>
+        </button>
+
+        <!-- Mobile Hamburger -->
+        <button class="hamburger" id="hamburger-btn" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile search bar (shown below nav on small screens) -->
+    <div class="mobile-search">
+      <input type="text" id="mobile-search-input" placeholder="Search products…" autocomplete="off" />
+      <button class="search-btn" id="mobile-search-btn" aria-label="Search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section class="hero" id="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="hero-badge">New Collection 2025 ✨</span>
+      <h1 class="hero-title">Fashion Made <span class="hero-highlight">for Her</span></h1>
+      <p class="hero-subtitle">Discover stunning sarees, chudi sets, baby dresses &amp; beauty essentials — all at unbeatable prices.</p>
+      <div class="hero-btns">
+        <a href="#products" class="btn btn-primary" id="shop-now-btn">
+          <i class="fa-solid fa-bag-shopping"></i> Shop Now
+        </a>
+        <a href="#categories" class="btn btn-outline">
+          <i class="fa-solid fa-list"></i> Browse Categories
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">50K+</span><span class="stat-label">Happy Customers</span></div>
+        <div class="stat"><span class="stat-num">2K+</span><span class="stat-label">Products</span></div>
+        <div class="stat"><span class="stat-num">4.8★</span><span class="stat-label">Avg Rating</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-img-wrap">
+        <img src="dress.png" alt="Women fashion collection" class="hero-img" />
+        <div class="hero-badge-float badge-offer">Up to 70% OFF</div>
+        <div class="hero-badge-float badge-free">Free Delivery</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== MARQUEE STRIP ========== -->
+  <div class="marquee-strip">
+    <div class="marquee-track">
+      <span>🌸 Free delivery on orders above ₹499</span>
+      <span>✨ New arrivals every week</span>
+      <span>💜 Exclusive women &amp; girls collection</span>
+      <span>🎀 Baby girl dresses — super soft fabrics</span>
+      <span>💄 Top cosmetic brands at best prices</span>
+      <span>🌸 Free delivery on orders above ₹499</span>
+      <span>✨ New arrivals every week</span>
+      <span>💜 Exclusive women &amp; girls collection</span>
+      <span>🎀 Baby girl dresses — super soft fabrics</span>
+      <span>💄 Top cosmetic brands at best prices</span>
+    </div>
+  </div>
+
+  <!-- ========== CATEGORIES STRIP ========== -->
+  <section class="categories-strip" id="categories">
+    <div class="container">
+      <h2 class="section-title">Shop by Category</h2>
+      <div class="cat-cards">
+        <div class="cat-card" data-cat="saree">
+          <div class="cat-icon-wrap" style="background: linear-gradient(135deg,#f093fb,#c471f5);">
+            <i class="fa-solid fa-shirt"></i>
+          </div>
+          <span>Saree</span>
+        </div>
+        <div class="cat-card" data-cat="chudi">
+          <div class="cat-icon-wrap" style="background: linear-gradient(135deg,#a18cd1,#fbc2eb);">
+            <i class="fa-solid fa-vest"></i>
+          </div>
+          <span>Chudi / Salwar</span>
+        </div>
+        <div class="cat-card" data-cat="cosmetics">
+          <div class="cat-icon-wrap" style="background: linear-gradient(135deg,#fd79a8,#e84393);">
+            <i class="fa-solid fa-pump-soap"></i>
+          </div>
+          <span>Cosmetics</span>
+        </div>
+        <div class="cat-card" data-cat="baby">
+          <div class="cat-icon-wrap" style="background: linear-gradient(135deg,#b8c6db,#f5f7fa);">
+            <i class="fa-solid fa-baby"></i>
+          </div>
+          <span>Baby Girl Dresses</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PRODUCT SECTION ========== -->
+  <section class="products-section" id="products">
+    <div class="container">
+      <div class="products-header">
+        <h2 class="section-title">Our Collection</h2>
+        <p class="section-sub" id="products-subtitle">Showing all products</p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="filter-bar" id="filter-bar" role="tablist" aria-label="Filter by category">
+        <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">
+          <i class="fa-solid fa-grid-2"></i> All
+        </button>
+        <button class="filter-btn" data-filter="saree" role="tab" aria-selected="false">
+          <i class="fa-solid fa-shirt"></i> Saree
+        </button>
+        <button class="filter-btn" data-filter="chudi" role="tab" aria-selected="false">
+          <i class="fa-solid fa-vest"></i> Chudi / Salwar
+        </button>
+        <button class="filter-btn" data-filter="cosmetics" role="tab" aria-selected="false">
+          <i class="fa-solid fa-pump-soap"></i> Cosmetics
+        </button>
+        <button class="filter-btn" data-filter="baby" role="tab" aria-selected="false">
+          <i class="fa-solid fa-baby"></i> Baby Girl
+        </button>
+      </div>
+
+      <!-- Product Grid -->
+      <div class="product-grid" id="product-grid">
+        <!-- Products injected by JS -->
+      </div>
+
+      <!-- No Results Message -->
+      <div class="no-results hidden" id="no-results">
+        <i class="fa-solid fa-magnifying-glass-minus"></i>
+        <p>No products found. Try a different search or category.</p>
+        <button class="btn btn-primary" id="clear-search-btn">Clear Search</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ORDER HISTORY SECTION ========== -->
+  <section class="orders-section" id="orders">
+    <div class="container">
+      <h2 class="section-title">My Orders</h2>
+      <div class="order-list" id="order-list">
+        <!-- Orders injected by JS -->
+      </div>
+      <div class="empty-orders hidden" id="empty-orders">
+        <i class="fa-solid fa-box-open"></i>
+        <p>You haven't placed any orders yet.</p>
+        <a href="#products" class="btn btn-primary">Start Shopping</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer" id="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <div class="nav-logo footer-logo">
+          <i class="fa-solid fa-wand-sparkles logo-icon"></i>
+          <span class="logo-text">Purple<span class="logo-accent">Style</span></span>
+        </div>
+        <p class="footer-tagline">Fashion crafted with love for every woman &amp; girl.</p>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <h4>About Us</h4>
+        <ul>
+          <li><a href="#">Our Story</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Sustainability</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Customer Service</h4>
+        <ul>
+          <li><a href="#">Track Order</a></li>
+          <li><a href="#">Return Policy</a></li>
+          <li><a href="#">Size Guide</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:hello@purplestyle.in"><i class="fa-solid fa-envelope"></i> hello@purplestyle.in</a></li>
+          <li><a href="tel:+911800000000"><i class="fa-solid fa-phone"></i> 1800-000-0000</a></li>
+          <li><i class="fa-solid fa-location-dot"></i> Mumbai, India</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 PurpleStyle. All rights reserved. Made with <i class="fa-solid fa-heart" style="color:#e84393"></i> for women.</p>
+      <div class="payment-icons">
+        <span>Visa</span><span>Mastercard</span><span>UPI</span><span>Paytm</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== CART SIDEBAR ========== -->
+  <div class="cart-overlay" id="cart-overlay" aria-hidden="true"></div>
+  <aside class="cart-sidebar" id="cart-sidebar" aria-label="Shopping Cart" role="complementary">
+    <div class="cart-header">
+      <h3><i class="fa-solid fa-bag-shopping"></i> My Cart</h3>
+      <button class="close-btn" id="close-cart-btn" aria-label="Close Cart">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <!-- Cart Items -->
+    <div class="cart-items" id="cart-items">
+      <!-- Cart item cards injected by JS -->
+    </div>
+
+    <!-- Empty Cart Message -->
+    <div class="empty-cart hidden" id="empty-cart">
+      <i class="fa-solid fa-bag-shopping"></i>
+      <p>Your cart is empty!</p>
+      <button class="btn btn-primary" id="continue-shopping-btn">Continue Shopping</button>
+    </div>
+
+    <!-- Cart Footer -->
+    <div class="cart-footer" id="cart-footer">
+      <div class="cart-total-row">
+        <span>Subtotal</span>
+        <span id="cart-subtotal">₹0</span>
+      </div>
+      <div class="cart-total-row">
+        <span>Delivery</span>
+        <span id="cart-delivery">₹0</span>
+      </div>
+      <div class="cart-total-row total-bold">
+        <span>Total</span>
+        <span id="cart-total">₹0</span>
+      </div>
+      <button class="btn btn-primary checkout-btn" id="checkout-btn">
+        <i class="fa-solid fa-lock"></i> Proceed to Checkout
+      </button>
+    </div>
+  </aside>
+
+  <!-- ========== ORDER SUCCESS MODAL ========== -->
+  <div class="modal-overlay hidden" id="order-modal-overlay">
+    <div class="modal order-modal" id="order-modal" role="dialog" aria-modal="true" aria-labelledby="order-modal-title">
+      <div class="order-success-icon"><i class="fa-solid fa-circle-check"></i></div>
+      <h2 id="order-modal-title">Order Placed! 🎉</h2>
+      <p id="order-modal-id"></p>
+      <p id="order-modal-total"></p>
+      <p class="order-note">Your order will be delivered in 3–5 business days.</p>
+      <button class="btn btn-primary" id="close-order-modal-btn">Continue Shopping</button>
+    </div>
+  </div>
+
+  <!-- ========== LOGIN MODAL ========== -->
+  <div class="modal-overlay hidden" id="login-modal-overlay">
+    <div class="modal login-modal" id="login-modal" role="dialog" aria-modal="true" aria-labelledby="login-modal-title">
+      <button class="modal-close-btn" id="close-login-modal-btn" aria-label="Close login">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <!-- Login Form -->
+      <div class="auth-view" id="login-view">
+        <div class="modal-logo">
+          <i class="fa-solid fa-wand-sparkles logo-icon"></i>
+          <span class="logo-text">Purple<span class="logo-accent">Style</span></span>
+        </div>
+        <h2 id="login-modal-title">Welcome Back! 💜</h2>
+        <p class="modal-sub">Login to access your orders &amp; wishlist</p>
+        <form class="auth-form" id="login-form" novalidate>
+          <div class="form-group">
+            <label for="login-email">Email Address</label>
+            <div class="input-wrap">
+              <i class="fa-solid fa-envelope"></i>
+              <input type="email" id="login-email" placeholder="you@example.com" required />
+            </div>
+            <span class="field-error" id="login-email-error"></span>
+          </div>
+          <div class="form-group">
+            <label for="login-password">Password</label>
+            <div class="input-wrap">
+              <i class="fa-solid fa-lock"></i>
+              <input type="password" id="login-password" placeholder="Enter your password" required />
+              <button type="button" class="toggle-pwd" id="toggle-pwd-btn" aria-label="Toggle password visibility">
+                <i class="fa-solid fa-eye" id="toggle-pwd-icon"></i>
+              </button>
+            </div>
+            <span class="field-error" id="login-pwd-error"></span>
+          </div>
+          <button type="submit" class="btn btn-primary full-width" id="login-submit-btn">
+            <i class="fa-solid fa-arrow-right-to-bracket"></i> Login
+          </button>
+        </form>
+        <p class="auth-switch">Don't have an account? <button class="link-btn" id="go-register-btn">Sign Up</button></p>
+      </div>
+
+      <!-- Register Form -->
+      <div class="auth-view hidden" id="register-view">
+        <div class="modal-logo">
+          <i class="fa-solid fa-wand-sparkles logo-icon"></i>
+          <span class="logo-text">Purple<span class="logo-accent">Style</span></span>
+        </div>
+        <h2>Create Account 🌸</h2>
+        <p class="modal-sub">Join PurpleStyle &amp; start shopping</p>
+        <form class="auth-form" id="register-form" novalidate>
+          <div class="form-group">
+            <label for="reg-name">Full Name</label>
+            <div class="input-wrap">
+              <i class="fa-solid fa-user"></i>
+              <input type="text" id="reg-name" placeholder="Your full name" required />
+            </div>
+            <span class="field-error" id="reg-name-error"></span>
+          </div>
+          <div class="form-group">
+            <label for="reg-email">Email Address</label>
+            <div class="input-wrap">
+              <i class="fa-solid fa-envelope"></i>
+              <input type="email" id="reg-email" placeholder="you@example.com" required />
+            </div>
+            <span class="field-error" id="reg-email-error"></span>
+          </div>
+          <div class="form-group">
+            <label for="reg-password">Password</label>
+            <div class="input-wrap">
+              <i class="fa-solid fa-lock"></i>
+              <input type="password" id="reg-password" placeholder="Create a password" required />
+            </div>
+            <span class="field-error" id="reg-pwd-error"></span>
+          </div>
+          <button type="submit" class="btn btn-primary full-width" id="register-submit-btn">
+            <i class="fa-solid fa-user-plus"></i> Create Account
+          </button>
+        </form>
+        <p class="auth-switch">Already have an account? <button class="link-btn" id="go-login-btn">Login</button></p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ========== TOAST NOTIFICATION ========== -->
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <!-- Main JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
