@@ -1,4 +1,5 @@
 Purplestyle
+
 Purplestyle is a simple and responsive e-commerce web app designed for women. This project was built to practice real-world shopping website features using HTML, CSS, and JavaScript.
 
 🛍 Features
